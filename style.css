@@ -32,6 +32,22 @@ main section {
     min-height: 100%;
 }
 
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    height: 56px;
+}
+
+nav a {
+    width: 103px;
+    filter: drop-shadow(0 0 10px white);
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
 hr {
     width: 100%;
 }

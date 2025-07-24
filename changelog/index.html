@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../images/Inbreadcat.png">
+    <title>op0sit Home</title>
+</head>
+<body>
+    <div id="wrapper">
+        <img src="../images/cat-transparent.gif" alt="Cats" style="width: 300px; object-fit: contain;">
+        <main>
+            <div id="bg"></div>
+            <section>
+                <h1>Homepage</h1>
+                <hr>
+                <nav>
+                    <a title="Home" href="../"><img src="../images/HomeButton1.png" alt="Home"></a>
+                    <a title="Memes" href="">Memes</a>
+                    <a title="Changelog" href=""><img src="../images/Changelogbutton.png" alt=""></a>
+                </nav>
+                <hr>
+                <h2>Changelog</h2>
+                <p><span title="2025/07/24" class="date">2025-7-24</span>: Added a navbar and and a site for changelogs, might write longer changes here.</p>
+                <p><span title="2025/07/24" class="date">2025-7-24</span>: Changed URL to github and learned how Git works</p>
+                <p><span title="2025/07/23" class="date">2025-7-23</span>: Website is created at around 01:00 using cup-noodles as our driving force. Website is added to Soweliring and a changelog is added</p>
+                <footer>
+                    <hr>
+                    <p>Made using <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> and <a href="https://sv.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> by me with help from <a href="https://thedressedmolerat.github.io/">molerat</a></p>
+                </footer>
+            </section>
+        </main>
+        <aside>
+            <section>
+                <h2>Webrings</h2>
+                <hr>
+                <h3>Soweliring</h3>
+                <p>My friend made this webring so i joined it 🥀🔋</p>
+                <p>Joined: <span title="2025/07/24" class="date">2025-7-24</span></p>
+                <p id="soweliring"><a href="https://thedressedmolerat.github.io/webring?name=op0sit&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=op0sit&to=previous">&lt;</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=op0sit&to=next">&gt;</a> <a href="https://thedressedmolerat.github.io/webring?name=op0sit&to=skipnext">⇉</a></p>
+                <hr>
+            </section>
+        </aside>
+        <img src="/images/output-onlinegiftools.gif" alt="Cats" style="object-fit: contain;">
+    </div>
+</body>
+
+<!-- source molerat https://thedressedmolerat.github.io/ -->
+<script>
+let date_spans = document.getElementsByClassName("date")
+
+for (const span of date_spans) {
+    days_ago = Math.floor((Date.now()-Date.parse(span.innerHTML))/(1000*60*60*24))
+    span.innerHTML = "<strong>" + days_ago + (days_ago==1 ? " day ago" : " days ago") + "</strong>";
+}
+</script>
+</html>
