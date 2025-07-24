@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "gg sans";
+    src: url(fonts/gg\ sans\ Regular.ttf);
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:  whitesmoke;
@@ -102,6 +107,51 @@ strong {
     color: rgb(119, 67, 240);
 }
 
+.steam {
+    font-family: "motiva-sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    background: linear-gradient(155deg,rgba(212, 85, 188, 0.3) 0%, rgba(94, 116, 214, 0.3) 100%);
+    height: 180px;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 15px 0;
+}
+
+.steam p {
+    margin-top: auto;
+    font-size: 1.4em;
+}
+
+.steam a:hover {
+    text-decoration: none;
+    animation: 2s linear infinite steam-color;
+}
+
+.discord {
+    background-color: rgb(30, 30, 46, 0.5);
+    height: 180px;
+    padding: 5px;
+    border: 1px solid rgb(128, 128, 128, 0.5);
+    border-radius: 25px;
+    margin: 15px 0;
+}
+
+.discord p {
+    margin-top: auto;
+    font-size: 1.4em;
+}
+
+.discord a {
+    color: rgb(205, 214, 244);
+    font-family: "gg sans";
+}
+
+.discord a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
 /* source molerat https://thedressedmolerat.github.io/ */
 #bg {
     position: fixed;
@@ -128,4 +178,11 @@ strong {
     75%{filter: drop-shadow(0 0 15px rgb(127,0,255));}
     83%{filter: drop-shadow(0 0 15px rgb(255,0,255));}
     91%{filter: drop-shadow(0 0 15px rgb(255,0,127));}
+}
+
+@keyframes steam-color {
+    0%, 100% { color: rgb(206, 81, 231); }
+    33% { color: rgb(127,0,255); }
+    66% { color: rgb(255,0,255); }
+    87% { color: rgb(255,0,127); }
 }
