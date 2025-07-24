@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+.side-cats {
+    object-fit: contain; 
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+}
+
 section {
     background-color: #000a;
     margin: 0 auto;
@@ -163,6 +168,11 @@ strong {
     background-image: url(images/Backgpng.png);
     animation: 6s linear infinite bg;
 }
+
+@media (max-width: 600px) {
+    
+}
+
 
 @keyframes bg { 0%{transform:translateY(0px);} 100%{transform:translate(128px,128px);} }
 

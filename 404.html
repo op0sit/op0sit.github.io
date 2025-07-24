@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/leu3zvo.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/Inbreadcat.png">
+    <title>op0sit 404 error</title>
+</head>
+<body>
+    <div id="wrapper">
+        <img src="/images/cat-transparent.gif" alt="Cats" class="side-cats" style="width: 300px;">
+        <aside>
+        </aside>
+        <main>
+            <div id="bg"></div>
+            <section>
+                <h1>404 Error</h1>
+                <hr>
+                <nav>
+                    <a title="Home" href="/"><img src="/images/HomeButton1.png" alt="Home"></a>
+                    <a title="Memes" href="memes"><img src="/images/maxwell-the-cat.gif" alt="Memes" style="height: 100%;"></a>
+                    <a title="Changelog" href="changelog/"><img src="/images/Changelogbutton.png" alt=""></a>
+                </nav>
+                <hr>
+                <h2>There was an error finding that page</h2>
+                <div>
+                    <img src="/images/sleepy-cat-transparent-sleepy.gif" alt="Sleepy cat" style="float: left; width: 150px; shape-outside: url(/images/sleepy-cat-transparent-sleepy.gif); padding-right: 20px; shape-outside: polygon(31% 0, 62% 22%, 100% 62%, 89% 78%, 61% 92%, 20% 86%, 7% 44%);;">
+                    <p>The page you were looking wasn't found make sure you're spelling correctly.</p>
+                    <p>Maybe you where looking for the <a href="/">homepage</a>?</p>
+                    <a href="https://http.cat/status/404"><img src="/images/404.jpg" alt="404 error cat" style="max-width: 500px;"></a>
+                    <h2>404 Not Found</h2>
+                </div>
+                <footer>
+                    <hr>
+                    <p>Made using <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> and <a href="https://sv.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> by me with help from <a href="https://thedressedmolerat.github.io/">molerat</a></p>
+                </footer>
+            </section>
+        </main>
+        <aside>
+        </aside>
+        <img src="/images/output-onlinegiftools.gif" alt="Cats" class="side-cats">
+    </div>
+</body>
+
+<!-- source molerat https://thedressedmolerat.github.io/ -->
+<script>
+let date_spans = document.getElementsByClassName("date")
+
+for (const span of date_spans) {
+    days_ago = Math.floor((Date.now()-Date.parse(span.innerHTML))/(1000*60*60*24))
+    span.innerHTML = "<strong>" + days_ago + (days_ago==1 ? " day ago" : " days ago") + "</strong>";
+}
+</script>
+</html>
