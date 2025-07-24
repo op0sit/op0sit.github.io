@@ -41,7 +41,11 @@ nav {
 
 nav a {
     width: 103px;
-    filter: drop-shadow(0 0 10px white);
+    filter: drop-shadow(0 0 8px #fff8);
+}
+
+nav a[href=""] {
+    animation: 2s linear infinite rainbow;
 }
 
 nav a:hover {
@@ -90,6 +94,10 @@ a:hover {
     color: blueviolet;
 }
 
+p {
+    font-size: 14pt;
+}
+
 strong {
     color: rgb(119, 67, 240);
 }
@@ -107,3 +115,17 @@ strong {
 }
 
 @keyframes bg { 0%{transform:translateY(0px);} 100%{transform:translate(128px,128px);} }
+
+@keyframes rainbow {
+    100%,0%{filter: drop-shadow(0 0 15px rgb(255,0,0));}
+    8%{filter: drop-shadow(0 0 15px rgb(255,127,0));}
+    16%{filter: drop-shadow(0 0 15px rgb(255,255,0));}
+    25%{filter: drop-shadow(0 0 15px rgb(127,255,0));}
+    41%{filter: drop-shadow(0 0 15px rgb(0,255,127));}
+    50%{filter: drop-shadow(0 0 15px rgb(0,255,255));}
+    58%{filter: drop-shadow(0 0 15px rgb(0,127,255));}
+    66%{filter: drop-shadow(0 0 15px rgb(0,0,255));}
+    75%{filter: drop-shadow(0 0 15px rgb(127,0,255));}
+    83%{filter: drop-shadow(0 0 15px rgb(255,0,255));}
+    91%{filter: drop-shadow(0 0 15px rgb(255,0,127));}
+}
