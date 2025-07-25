@@ -54,6 +54,12 @@ nav {
 nav a {
     width: 103px;
     filter: drop-shadow(0 0 8px #fff8);
+    display: flex;
+    justify-content: center;
+}
+
+nav a img {
+    height: 100%;
 }
 
 nav a[href=""] {
@@ -77,6 +83,11 @@ aside {
 aside section {
     border-radius: 30px;
     margin-top: 30px;
+    padding: 10px;
+}
+
+aside h2 {
+    margin-top: 10px;
 }
 
 .changelog {
@@ -186,6 +197,16 @@ strong {
     transform: scale(1.1);
 }
 
+.logs-side {
+    border-radius: 0;
+    border-right: 0;
+    flex: 1;
+}
+
+.logs-main {
+    width: 1000px;
+}
+
 /* source molerat https://thedressedmolerat.github.io/ */
 #bg {
     position: fixed;
@@ -227,6 +248,12 @@ strong {
     .socials {
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    .logs-side {
+        border-right: 4px solid rgb(206, 81, 231);
+    }
+    .logs-main {
+        width: 100%;
     }
 }
 
