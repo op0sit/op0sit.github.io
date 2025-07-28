@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/leu3zvo.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/x-icon" href="../images/Inbreadcat.png">
+    <link rel="scripts" href="../scripts.js">
     <title>Changelog - op0sit</title>
 </head>
 <body>
@@ -47,11 +48,32 @@
                 </nav>
                 <hr>
                 <h2>Changelog</h2>
+                <p><span title="2025/07/28" class="date">2025-7-28</span>: Added pictures to the changelog!</p>
+                <div class="gallery">
+                    <img src="../gallery/Website6.png" alt="Webiste">
+                </div>
+                <hr>
                 <p><span title="2025/07/27" class="date">2025-7-27</span>: Got added to the Sillyring webring!</p>
+                <hr>
                 <p><span title="2025/07/25" class="date">2025-7-25</span>: Added more animation for buttons, also added mobile accessabilty for the website. Added a socials page aswell as my own button. Started working on a logs page, might move the changelogs there when completed.</p>
+                <div class="gallery">
+                    <img src="../gallery/Website5.png" alt="Website">
+                </div>
+                <hr>
                 <p><span title="2025/07/24" class="date">2025-7-24</span>: Added a navbar and and a site for changelogs, might write longer changes here.</p>
+                <hr>
                 <p><span title="2025/07/24" class="date">2025-7-24</span>: Changed URL to github and learned how Git works</p>
+                <hr>
                 <p><span title="2025/07/23" class="date">2025-7-23</span>: Website is created at around 01:00 using cup-noodles as our driving force. Website is added to Soweliring and a changelog is added</p>
+                <div id="bigimage">
+                    <img id="bigimage-img" src="" alt="Big Website Image">
+                </div>
+                <div class="gallery">
+                    <img src="../gallery/Website1.png" alt="Website">
+                    <img src="../gallery/Website2.png" alt="Website">
+                    <img src="../gallery/Website3.png" alt="Website">
+                    <img src="../gallery/Website4.png" alt="Website">
+                </div>
                 <footer>
                     <hr>
                     <p>Made using <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> and <a href="https://sv.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> by me with help from <a href="https://thedressedmolerat.github.io/">molerat</a></p>
@@ -66,6 +88,10 @@
                 <p>My friend made this webring so i joined it 🥀🔋</p>
                 <p>Joined: <span title="2025/07/24" class="date">2025-7-24</span></p>
                 <p id="soweliring"><a href="https://thedressedmolerat.github.io/webring?name=op0sit&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=op0sit&to=previous">&lt;</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=op0sit&to=next">&gt;</a> <a href="https://thedressedmolerat.github.io/webring?name=op0sit&to=skipnext">⇉</a></p>
+                <hr>
+                <h3>Sillyring</h3>
+                <p>Joined: <span title="2025/07/27" class="date">2025-7-27</span></p>
+                <script src="https://silly.possiblyaxolotl.com/ring/webstring.js"></script>
                 <hr>
             </section>
         </aside>
@@ -82,5 +108,20 @@ for (const span of date_spans) {
     span.innerHTML = "<strong>" + days_ago + (days_ago==1 ? " day ago" : " days ago") + "</strong>";
 }
 </script>
-<script src="https://silly.possiblyaxolotl.com/ring/webstring.js"></script>
+<script>
+const Bigimage = document.getElementById('bigimage');
+const BigimageImg = document.getElementById('bigimage-img');
+
+document.querySelectorAll('.gallery img').forEach(img => {
+img.addEventListener('click', () => {
+    Bigimage.style.display = 'flex';
+    BigimageImg.src = img.src;
+});
+});
+
+// Close the big image when you click outside it
+Bigimage.addEventListener('click', () => {
+Bigimage.style.display = 'none';
+});
+</script>
 </html>
